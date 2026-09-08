@@ -16,7 +16,7 @@ public static class Health
         var startedAt = Stopwatch.GetTimestamp();
         var initialCpuTime = process.TotalProcessorTime;
 
-        await Task.Delay(100);
+        await Task.Delay(50);
 
         process.Refresh();
         var elapsedSeconds = Stopwatch.GetElapsedTime(startedAt).TotalSeconds;
